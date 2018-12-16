@@ -20,9 +20,9 @@ Show the placeholder of view when you are loading something...
 
 <br>
 
-![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot4.gif)
+![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot4.png)
 
-![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot5.gif)
+![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot5.png)
 
 ------
 ### Dependency
