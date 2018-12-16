@@ -11,23 +11,18 @@ Show the placeholder of view when you are loading something...
 
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot1.gif)
 
-<br>
 
 #### The advenced effect:
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot2.gif)
 
-<br>
-
 #### Use in RecyclerView
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot3.gif)
 
-<br>
 
 #### DingDing
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot4.png) 
 
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot5.png)
-
 ------
 ### Dependency
 
