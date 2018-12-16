@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/icon_head" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Sam"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="考勤组：考勤"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#dddddd" />
+
+    <TextView
+        android:id="@+id/tv_day_des"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="你今天休息"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_timeline"
+            android:layout_marginTop="10dp"
+            android:layout_width="10dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_shangban"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/drawable_dingding" />
+
+            <View
+                android:id="@+id/v_timeline"
+                android:layout_width="2dp"
+                android:layout_height="280dp"
+                android:background="#00A2EB" />
+
+
+            <View
+                android:id="@+id/v_xiaban"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/drawable_dingding" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shangban"
+            android:text="上班打卡"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/layout_timeline"
+            android:textSize="15sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_xiaban"
+            android:text="下班打卡"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@id/layout_timeline"
+            android:layout_toRightOf="@id/layout_timeline"
+            android:textSize="15sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_daka"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="打卡"
+            android:gravity="center"
+            android:background="@drawable/drawable_dingding"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+            <TextView
+                android:id="@+id/tv_daka_des"
+                android:text="重新定位"
+                android:textColor="#00A2E8"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

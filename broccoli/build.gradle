@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 12
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+}
+
+publish {
+    userOrg = 'samlss'
+    groupId = 'me.samlss'
+    artifactId = 'broccoli'
+    publishVersion = '1.0.0'
+    desc = 'An Android library that shows the placeholder of the view.'
+    website = 'https://github.com/samlss/Broccoli'
+}
