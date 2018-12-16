@@ -7,22 +7,24 @@
 Show the placeholder of view when you are loading something...
 
 ### Screenshots
+#### The default effect:
 
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot1.gif)
 
 <br>
 
+#### The advenced effect:
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot2.gif)
 
 <br>
 
+#### Use in RecyclerView
 ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot3.gif)
 
 <br>
 
-![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot4.png)
-
-![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot5.png)
+#### 
+![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot4.png)  ![Broccoli](https://github.com/samlss/Broccoli/blob/master/screenshots/screenshot5.png)
 
 ------
 ### Dependency
