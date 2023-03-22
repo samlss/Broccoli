@@ -4,8 +4,9 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
@@ -58,25 +59,25 @@ public class LayoutAdvancedSampleActivity extends AppCompatActivity {
     }
 
     private void initViews(){
-        tvViewTimes = findViewById(R.id.tv_view_time);
-        tvCollectTimes = findViewById(R.id.tv_collect_time);
-        tvPrice = findViewById(R.id.tv_price);
-        ivClock = findViewById(R.id.iv_clock);
-        tvTime = findViewById(R.id.tv_time);
-        ivCalendar = findViewById(R.id.iv_calendar);
-        ivLocation = findViewById(R.id.iv_location);
-        tvLocation = findViewById(R.id.tv_location);
-        ivRightArrow = findViewById(R.id.iv_arrow_right);
+        tvViewTimes = (TextView) findViewById(R.id.tv_view_time);
+        tvCollectTimes = (TextView) findViewById(R.id.tv_collect_time);
+        tvPrice = (TextView) findViewById(R.id.tv_price);
+        ivClock = (ImageView) findViewById(R.id.iv_clock);
+        tvTime = (TextView) findViewById(R.id.tv_time);
+        ivCalendar = (ImageView) findViewById(R.id.iv_calendar);
+        ivLocation = (ImageView) findViewById(R.id.iv_location);
+        tvLocation = (TextView) findViewById(R.id.tv_location);
+        ivRightArrow = (ImageView) findViewById(R.id.iv_arrow_right);
         vLine = findViewById(R.id.view_line);
-        ivLogo = findViewById(R.id.iv_logo);
-        tvOrganizer = findViewById(R.id.tv_organizer_name);
-        tvOrganizerDescription = findViewById(R.id.tv_organizer_description);
-        tvFans = findViewById(R.id.tv_fans);
-        tvFansNumber = findViewById(R.id.tv_fans_number);
-        tvEvents = findViewById(R.id.tv_events);
-        tvEventsNumber = findViewById(R.id.tv_events_number);
-        tvFollow = findViewById(R.id.tv_follow);
-        tvStation = findViewById(R.id.tv_station);
+        ivLogo = (ImageView) findViewById(R.id.iv_logo);
+        tvOrganizer = (TextView) findViewById(R.id.tv_organizer_name);
+        tvOrganizerDescription = (TextView) findViewById(R.id.tv_organizer_description);
+        tvFans = (TextView) findViewById(R.id.tv_fans);
+        tvFansNumber = (TextView) findViewById(R.id.tv_fans_number);
+        tvEvents = (TextView) findViewById(R.id.tv_events);
+        tvEventsNumber = (TextView) findViewById(R.id.tv_events_number);
+        tvFollow = (TextView) findViewById(R.id.tv_follow);
+        tvStation = (TextView) findViewById(R.id.tv_station);
 
         findViewById(R.id.iv_retry).setOnTouchListener(new View.OnTouchListener() {
             @Override

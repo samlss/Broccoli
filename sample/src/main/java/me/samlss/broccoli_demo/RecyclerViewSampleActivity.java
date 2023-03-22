@@ -2,14 +2,8 @@ package me.samlss.broccoli_demo;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.BounceInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +16,13 @@ import java.util.Map;
 import me.samlss.broccoli.Broccoli;
 import me.samlss.broccoli.PlaceholderParameter;
 import me.samlss.broccoli.BroccoliGradientDrawable;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 
 /**
  * @author SamLeung
@@ -104,7 +105,7 @@ public class RecyclerViewSampleActivity extends AppCompatActivity {
     }
 
     private void initRecyclerView(){
-        mRecyclerView = findViewById(R.id.recyclerview);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
         myAdapter = new MyAdapter();
@@ -122,8 +123,9 @@ public class RecyclerViewSampleActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull final MyViewHolder myViewHolder, final int i) {
+        public void onBindViewHolder(@NonNull final MyViewHolder myViewHolder, int position) {
             Broccoli broccoli = mViewPlaceholderManager.get(myViewHolder.itemView);
+            final int itemPos = position;
             if (broccoli == null){
                 broccoli = new Broccoli();
                 mViewPlaceholderManager.put(myViewHolder.itemView, broccoli);
@@ -133,22 +135,22 @@ public class RecyclerViewSampleActivity extends AppCompatActivity {
             broccoli.addPlaceholder(new PlaceholderParameter.Builder()
                     .setView(myViewHolder.tvTitle)
                     .setDrawable(new BroccoliGradientDrawable(Color.parseColor("#DDDDDD"),
-                            Color.parseColor("#CCCCCC"), 0, 1000, new LinearInterpolator()))
+                            Color.parseColor("#FF0000"), 0, 1000, new LinearInterpolator()))
                     .build());
             broccoli.addPlaceholder(new PlaceholderParameter.Builder()
                     .setView(myViewHolder.imageView)
                     .setDrawable(new BroccoliGradientDrawable(Color.parseColor("#DDDDDD"),
-                            Color.parseColor("#CCCCCC"), 0, 1000, new LinearInterpolator()))
+                            Color.parseColor("#FF0000"), 0, 1000, new LinearInterpolator()))
                     .build());
             broccoli.addPlaceholder(new PlaceholderParameter.Builder()
                     .setView(myViewHolder.tvPrice)
                     .setDrawable(new BroccoliGradientDrawable(Color.parseColor("#DDDDDD"),
-                            Color.parseColor("#CCCCCC"), 0, 1000, new LinearInterpolator()))
+                            Color.parseColor("#FF0000"), 0, 1000, new LinearInterpolator()))
                     .build());
             broccoli.addPlaceholder(new PlaceholderParameter.Builder()
                     .setView(myViewHolder.tvDescription)
                     .setDrawable(new BroccoliGradientDrawable(Color.parseColor("#DDDDDD"),
-                            Color.parseColor("#CCCCCC"), 0, 1000, new LinearInterpolator()))
+                            Color.parseColor("#FF0000"), 0, 1000, new LinearInterpolator()))
                     .build());
             broccoli.show();
 
@@ -167,10 +169,10 @@ public class RecyclerViewSampleActivity extends AppCompatActivity {
                             return;
                         }
 
-                        myViewHolder.imageView.setImageResource(mDataList.get(i).imageRes);
-                        myViewHolder.tvPrice.setText("¥ "+String.valueOf(mDataList.get(i).price));
-                        myViewHolder.tvTitle.setText(mDataList.get(i).title);
-                        myViewHolder.tvDescription.setText(mDataList.get(i).description);
+                        myViewHolder.imageView.setImageResource(mDataList.get(itemPos).imageRes);
+                        myViewHolder.tvPrice.setText("¥ "+String.valueOf(mDataList.get(itemPos).price));
+                        myViewHolder.tvTitle.setText(mDataList.get(itemPos).title);
+                        myViewHolder.tvDescription.setText(mDataList.get(itemPos).description);
                     }
                 };
                 mTaskManager.put(myViewHolder.itemView, task);

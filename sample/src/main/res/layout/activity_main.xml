@@ -7,51 +7,47 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Layout Simple Sample"
             android:onClick="startLayoutSample"
-            />
+            android:text="静态" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Layout Advanced Sample"
             android:onClick="startAdvancedLayoutSample"
-            />
+            android:text="动画" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RecyclerView Sample"
             android:onClick="startRecyclerViewSample"
-            />
+            android:text="列表" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DingDing Sample"
             android:onClick="startDingDingSample"
-            />
+            android:text="DingDing Sample" />
 
         <TextView
-            android:gravity="center"
-            android:drawablePadding="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="right"
-            android:drawableLeft="@drawable/ic_samlss_head_photo"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="50dp"
-            android:text="Created by Samlss"
-            android:textSize="16sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_samlss_head_photo"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="Created by Samlss"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </ScrollView>
